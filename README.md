@@ -13,6 +13,7 @@ On effectue un run dans le debugger. On observe bien dans M2k[1] la valeur 0x3FF
 On peut ainsi comparer les valeurs de M2k avec les valeurs attendues contenues en commentaire dans d'autres fichiers de test.
 
 Fenêtre callstack :
+
 ![](https://github.com/abirbenazzouz/BE-CHTI_final/blob/master/Screens%20/screen1.PNG)
 
 ## Objectif 2:
@@ -23,28 +24,34 @@ On choisit une valeur pour le deuxième argument de la fonction Init_TimingADC_A
 Pour cet exemple, on chosiit la valeur 0x52, de bit de poids fort 5 et de poids faible 2. Pour cette valeur on attend de voir les chiffres 1 à 6 dans l'ordre dans chacune des cases du tableau score, ce qui est bien observé.
 Pour observer, on compile le programme (build) et on lance le debuggeur puis dans la watch window, on affiche toutes les valeurs du tableau score.
 
-Screen Watch 1 : screen2
+Watch window Watch 1 :
+
+![](https://github.com/abirbenazzouz/BE-CHTI_final/blob/master/Screens%20/screen2.PNG)
 
 On peut également tester avec d'autres valeurs : par exemple avec la valeur 0x33 on observe bien les valeurs 1,2,3,4,5,0 dans le tableau score.
 
-Screen Watch 1 : screen 3
+Watch window Watch 1 :
 
+![](https://github.com/abirbenazzouz/BE-CHTI_final/blob/master/Screens%20/screen3.PNG)
 
 ## Objectif 3 : 
 **Gérer le son**
 Pour observer la courbe demandée par l'objectif, il faut compiler le programme, lancer le debugger puis ouvrir une fenêtre logic analyser en mode analog et l'ajuster via le bouton Setup dans une plage allant de 0 à 700 environ.
 
-Allure du son : screen 4
+Allure du son : 
 
+![](https://github.com/abirbenazzouz/BE-CHTI_final/blob/master/Screens%20/screen4.PNG)
 
 
 Pour observer le pas entre deux échantillons consécutifs, on place un point d'arrêt ligne (première ligne de la focntion timer_callback). On run une première fois, puis on reset le timer t1 qui s'affiche en bas à droite sur Keil, puis de run une seconde fois. On obtient alors bien 91 microsecondes.
 
-91 micro : screen 5
+![](https://github.com/abirbenazzouz/BE-CHTI_final/blob/master/Screens%20/screen5.PNG)
 
 
 ## Objectif 4 :
 **Projet Final**
 Pour observer l'objectif final, on ouvre une fenêtre System Analyser, dans laquelle on observe bien que dès que le score d'un joueur est incrémenté, un son se lance également.
 
-Screen System Analyser : screen 6
+Screen System Analyser :
+
+![](https://github.com/abirbenazzouz/BE-CHTI_final/blob/master/Screens%20/screen6.PNG)
