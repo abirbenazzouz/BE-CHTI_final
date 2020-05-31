@@ -12,7 +12,8 @@ On appelle TabSig2 le signal donné par le fichier f1p-45.asm.
 On effectue un run dans le debugger. On observe bien dans M2k[1] la valeur 0x3FFFCDE4 donc environ 2^30. Et pour k entre 1 et 63 on a bien M2k < 0x0000000F.
 On peut ainsi comparer les valeurs de M2k avec les valeurs attendues contenues en commentaire dans d'autres fichiers de test.
 
-Screen callstack screen1
+Fenêtre callstack :
+![](https://github.com/abirbenazzouz/BE-CHTI_final/blob/master/Screens%20/screen1.PNG)
 
 ## Objectif 2:
 **Faire tourner la DFT "en réel" et gérer le score des 6 joueurs**
